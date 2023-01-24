@@ -45,7 +45,7 @@
             <br />
             <div class="form-group"> {% for choice in question.choice_set.all %} <div class="form-check">
                 <label class="form-check-label">
-                  <input type="checkbox" name="choice_{{choice.id}}" class="form-check-input" id="{{choice.id}}" value="{{choice.id}}">{{ choice.text }}
+                  <input type="checkbox" name="choice_{{choice.id}}" class="form-check-input" id="{{choice.id}}" value="{{choice.id}}">{{choice.text}}
                 </label>
               </div> {% endfor %} </div>
           </div> {% endfor %} <input class="btn btn-success btn-block" type="submit" value="Submit">
